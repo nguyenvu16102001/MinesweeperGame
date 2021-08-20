@@ -37,7 +37,7 @@ namespace MinesweeperGame.UI.Views
             this.pnlBoard.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlBoard.Location = new System.Drawing.Point(0, 0);
             this.pnlBoard.Name = "pnlBoard";
-            this.pnlBoard.Size = new System.Drawing.Size(1032, 788);
+            this.pnlBoard.Size = new System.Drawing.Size(995, 788);
             this.pnlBoard.TabIndex = 0;
             // 
             // BoardView
@@ -47,7 +47,7 @@ namespace MinesweeperGame.UI.Views
             this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.pnlBoard);
             this.Name = "BoardView";
-            this.Size = new System.Drawing.Size(1032, 788);
+            this.Size = new System.Drawing.Size(995, 788);
             this.Load += new System.EventHandler(this.BoardView_Load);
             this.ResumeLayout(false);
 

@@ -1,5 +1,4 @@
-﻿using MinesweeperGame.Models;
-using MinesweeperGame.UI.ViewModels;
+﻿using MinesweeperGame.UI.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -12,16 +11,12 @@ using System.Windows.Forms;
 
 namespace MinesweeperGame.UI.Views
 {
-    public partial class BoardView : UserControl
+    public partial class DisplayView : UserControl
     {
-        public BoardView()
+        public DisplayViewModel viewModel;
+        public DisplayView()
         {
             InitializeComponent();
-        }
-
-        private void BoardView_Load(object sender, EventArgs e)
-        {
-    
         }
     }
 }

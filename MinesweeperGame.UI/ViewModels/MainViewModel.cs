@@ -17,10 +17,13 @@ namespace MinesweeperGame.UI.ViewModels
             this.view = view;
             Load();
         }
+
         public void Load()
         {
-            Panel pnlGame = GetControl.Get<Panel>(view, "pnlGame");
-            pnlGame.Controls.Add(new BoardView());
+            GetControl.Get<Panel>(view, "pnlDisplay").Controls.Add(new DisplayView());
+            BoardView boardView = new BoardView();
+            GetControl.Get<Panel>(view, "pnlGame").Controls.Add(boardView);
+            var viewModel = new BoardViewModel(view, new Board() { rows = 9, columns = 9, number_Of_Mines = 10 });
         }
     }
 }

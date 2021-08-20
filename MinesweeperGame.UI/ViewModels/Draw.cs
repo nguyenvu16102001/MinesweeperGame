@@ -60,6 +60,12 @@ namespace MinesweeperGame.UI.ViewModels
             btn.Controls.Add(pictureBox);
         }
 
+        public void Draw_Explosive_Flag()
+        {
+            Image image = Image.FromFile(Application.StartupPath + @"\Images\ExplosiveFlag.png");
+            btn.BackgroundImage = image;
+            btn.BackgroundImageLayout = ImageLayout.Stretch;
+        }
         public void Draw_Flag()
         {
             Image image = Image.FromFile(Application.StartupPath + @"\Images\flag.png");

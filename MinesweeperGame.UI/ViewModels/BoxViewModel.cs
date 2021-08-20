@@ -21,11 +21,11 @@ namespace MinesweeperGame.UI.ViewModels
         }
         public void Load()
         {
-            Button btn = GetControl.Get<Button>(view, "btnBox");
-            btn.MouseUp += (sender, EventArgs) => { btn_Click(sender, EventArgs, view.box); };
+            //Button btn = GetControl.Get<Button>(view, "btnBox");
+            //btn.MouseUp += (sender, EventArgs) => { btn_Click(sender, EventArgs, view.box); };
         }
 
-        private void btn_Click(object sender, MouseEventArgs eventArgs, MinesBox box)
+        /*private void btn_Click(object sender, MouseEventArgs eventArgs, MinesBox box)
         {
             Button button = sender as Button;
             if(eventArgs.Button == MouseButtons.Right)
@@ -43,6 +43,6 @@ namespace MinesweeperGame.UI.ViewModels
                     draw.Draw_Button();
                 } 
             }
-        }
+        }*/
     }
 }
